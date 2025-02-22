@@ -1,1 +1,16 @@
-<ul [innerHTML]="texto"></ul>
+<!-- <ul [innerHTML]="texto"></ul> -->
+
+<section class="frames">
+  <div class="flex">
+    @for (frame of arts; track frame.title) {
+    <article class="frame">
+      <p>{{ frame.title }}</p>
+      <p>{{ frame.about }}</p>
+      <p>{{ frame.date }}</p>
+      <figure>
+        <img src="frame.image" alt="imagen" />
+      </figure>
+    </article>
+    }
+  </div>
+</section>

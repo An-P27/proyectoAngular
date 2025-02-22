@@ -29,6 +29,5 @@ export class AppComponent {
 
   getDataForm(event: IArt) {
     this.artList = [...this.artList, event];
-    console.log(this.artList);
   }
 }

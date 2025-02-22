@@ -1,0 +1,27 @@
+p {
+  color: red;
+}
+
+.frames .flex {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.625rem;
+}
+
+.frames .flex article {
+  width: 100%;
+  border: 1px solid black;
+  padding: 10px;
+}
+
+@media (width >=800px) {
+  .frames .flex article {
+    width: calc(50% - 0.625rem);
+  }
+}
+
+@media (width >=1200px) {
+  .frames .flex article {
+    width: calc(25% - 0.625rem);
+  }
+}

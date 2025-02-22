@@ -9,12 +9,9 @@ import { IArt } from '../../interfaces/iart.interface';
 })
 export class ArtListComponent {
   @Input() arts: IArt[] = [];
-  texto: string = '';
+  //texto: string = '';
 
-  ngOnChanges() {
-    this.texto = '';
-    this.arts.forEach((art) => {
-      this.texto += `<li class="art">${art.title}<br>${art.about}<br>${art.date}<br><img src="${art.image}" alt=""> </li>`;
-    });
+  ngOnInit() {
+    console.log(this.arts);
   }
 }
