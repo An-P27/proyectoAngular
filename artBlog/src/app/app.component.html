@@ -6,10 +6,10 @@
 <main>
   <aside>
     <!-- Formulario -->
-    <app-art-form></app-art-form>
+    <app-art-form (sendArt)="getDataForm($event)"></app-art-form>
   </aside>
   <section>
     <!-- lista -->
-    <app-art-list></app-art-list>
+    <app-art-list [arts]="artList"></app-art-list>
   </section>
 </main>

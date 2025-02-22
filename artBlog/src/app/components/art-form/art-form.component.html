@@ -1,1 +1,35 @@
-<p>art-form works!</p>
+<div class="form">
+  <p><strong>Nuevo frame</strong></p>
+  <div>
+    <label for="title">Nombre de la obra</label>
+    <input
+      type="text"
+      id="title"
+      placeholder="Nombre de la obra"
+      [(ngModel)]="newArt.title"
+    />
+  </div>
+  <div>
+    <label for="about">Sobre la obra</label>
+    <input
+      type="text"
+      id="about"
+      placeholder="Sobre la obra"
+      [(ngModel)]="newArt.about"
+    />
+  </div>
+  <div>
+    <label for="day">Fecha de publicación</label>
+    <input type="date" id="day" [(ngModel)]="newArt.date" />
+  </div>
+  <div>
+    <label for="image">Imagen</label>
+    <input
+      type="text"
+      id="image"
+      placeholder="URL de la imagen"
+      [(ngModel)]="newArt.image"
+    />
+  </div>
+  <button (click)="getArt()">Nuevo</button>
+</div>
