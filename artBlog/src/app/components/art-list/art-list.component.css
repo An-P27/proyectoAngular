@@ -1,17 +1,32 @@
-p {
-  color: red;
-}
-
 .frames .flex {
   display: flex;
   flex-wrap: wrap;
   gap: 0.625rem;
+  padding: 0px 10px;
 }
 
 .frames .flex article {
   width: 100%;
-  border: 1px solid black;
-  padding: 10px;
+  border: 1px solid #def092;
+  padding: 20px;
+  color: #def092;
+}
+h1 {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+.date {
+  font-size: 11px;
+  letter-spacing: 1px;
+}
+.about {
+  font-size: 15px;
+
+  margin-bottom: 18px;
+}
+.image {
+  padding-bottom: 18px;
 }
 
 @media (width >=800px) {

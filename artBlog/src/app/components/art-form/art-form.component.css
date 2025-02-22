@@ -1,20 +1,41 @@
 .form {
-  background-color: #f7f7f7;
+  color: #def092;
   padding: 10px;
+}
+input::placeholder,
+textarea::placeholder {
+  color: #def092;
+  font-style: italic;
+  opacity: 0.4;
 }
 .form div {
   margin: 10px 0px;
+}
+.bigtext {
+  font-size: 100px;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
 }
 input {
   display: block;
   padding: 10px;
   width: 30%;
   margin-top: 5px;
+  color: #def092;
+  border: 1px solid #def092;
+  cursor: pointer;
+  background-color: #031402;
 }
+
 button {
   padding: 10px;
-  background-color: #101010;
-  color: #f9f8f6;
-  border-style: none;
+  background-color: #031402;
+  color: #def092;
+  border: 1px solid #def092;
   cursor: pointer;
+}
+
+button:hover {
+  background-color: #def092;
+  color: #031402;
+  border: 1px solid #031402;
 }

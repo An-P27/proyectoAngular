@@ -1,5 +1,5 @@
 header {
-  background-color: #101010;
+  background-color: #031402;
   padding: 16px 30px;
 }
 
@@ -8,11 +8,9 @@ main {
 }
 
 .logobox {
-  color: #f9f8f6;
-  letter-spacing: 4px;
-  font-size: 13px;
-  /* border-left: 1px solid #f9f8f6; */
-  /* border-right: 1px solid #f9f8f6;*/
+  color: #def092;
+  letter-spacing: 12px;
+  font-size: 14px;
   display: inline-block;
-  padding: 8px 12px;
+  padding: 20px 12px;
 }

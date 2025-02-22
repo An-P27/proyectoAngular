@@ -9,9 +9,6 @@ import { IArt } from '../../interfaces/iart.interface';
 })
 export class ArtListComponent {
   @Input() arts: IArt[] = [];
-  //texto: string = '';
 
-  ngOnInit() {
-    console.log(this.arts);
-  }
+  ngOnInit() {}
 }

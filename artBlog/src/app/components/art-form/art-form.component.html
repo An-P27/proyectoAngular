@@ -1,22 +1,12 @@
 <div class="form">
-  <p><strong>Nuevo frame</strong></p>
+  <p class="bigtext">New frames</p>
   <div>
     <label for="title">Nombre de la obra</label>
-    <input
-      type="text"
-      id="title"
-      placeholder="Nombre de la obra"
-      [(ngModel)]="newArt.title"
-    />
+    <input type="text" id="title" [(ngModel)]="newArt.title" />
   </div>
   <div>
     <label for="about">Sobre la obra</label>
-    <input
-      type="text"
-      id="about"
-      placeholder="Sobre la obra"
-      [(ngModel)]="newArt.about"
-    />
+    <input type="text" id="about" [(ngModel)]="newArt.about" />
   </div>
   <div>
     <label for="day">Fecha de publicación</label>
@@ -27,7 +17,7 @@
     <input
       type="text"
       id="image"
-      placeholder="URL de la imagen"
+      placeholder="URL"
       [(ngModel)]="newArt.image"
     />
   </div>

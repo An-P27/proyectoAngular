@@ -4,12 +4,12 @@
   </div>
 </header>
 <main>
+  <section>
+    <!-- Lista -->
+    <app-art-list [arts]="artList"></app-art-list>
+  </section>
   <aside>
     <!-- Formulario -->
     <app-art-form (sendArt)="getDataForm($event)"></app-art-form>
   </aside>
-  <section>
-    <!-- lista -->
-    <app-art-list [arts]="artList"></app-art-list>
-  </section>
 </main>
