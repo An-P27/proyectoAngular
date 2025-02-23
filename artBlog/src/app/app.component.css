@@ -1,10 +1,12 @@
 header {
-  background-color: #031402;
-  padding: 16px 30px;
-}
-
-main {
-  padding: 30px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 10px 0px 0px 30px;
+  z-index: 1000;
+  box-shadow: inset 0px 20px 15px rgba(3, 20, 2, 0.6);
+  background-color: #03140200;
 }
 
 .logobox {
@@ -13,4 +15,39 @@ main {
   font-size: 14px;
   display: inline-block;
   padding: 20px 12px;
+}
+
+main {
+  display: block;
+  padding: 10px 30px;
+  margin-top: 50px;
+}
+.frames {
+  width: 80%;
+}
+.aside {
+  display: flex;
+}
+
+@media (width >=400px) {
+  main {
+    display: block;
+  }
+  header {
+    background-color: #031402;
+  }
+  .frames {
+    width: 100%;
+  }
+}
+@media (width >=800px) {
+  main {
+    display: flex;
+  }
+  header {
+    background-color: #03140200;
+  }
+  .frames {
+    width: 80%;
+  }
 }

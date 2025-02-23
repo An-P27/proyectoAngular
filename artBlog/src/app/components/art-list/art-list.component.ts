@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, OnChanges } from '@angular/core';
 import { IArt } from '../../interfaces/iart.interface';
 
 @Component({
@@ -7,8 +7,16 @@ import { IArt } from '../../interfaces/iart.interface';
   templateUrl: './art-list.component.html',
   styleUrl: './art-list.component.css',
 })
-export class ArtListComponent {
+export class ArtListComponent implements OnChanges {
   @Input() arts: IArt[] = [];
 
-  ngOnInit() {}
+  ngOnChanges() {
+    this.sortArtsByDate();
+  }
+
+  private sortArtsByDate() {
+    this.arts.sort(
+      (a, b) => new Date(b.date).getTime() - new Date(a.date).getTime()
+    );
+  }
 }

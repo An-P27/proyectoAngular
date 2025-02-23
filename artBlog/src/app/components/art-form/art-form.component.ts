@@ -27,7 +27,7 @@ export class ArtFormComponent {
   }
 
   resetForm() {
-    this.myForm.resetForm();
     this.newArt = { title: '', about: '', date: '', image: '' };
+    this.myForm.form.markAsUntouched();
   }
 }

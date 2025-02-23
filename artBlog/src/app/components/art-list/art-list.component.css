@@ -10,11 +10,12 @@
   border: 1px solid #def092;
   padding: 20px;
   color: #def092;
+  background-color: #031402;
 }
 h1 {
-  font-size: 24px;
+  font-size: 22px;
   font-weight: 600;
-  margin-bottom: 6px;
+  margin-bottom: 16px;
 }
 .date {
   font-size: 11px;
@@ -31,12 +32,12 @@ h1 {
 
 @media (width >=800px) {
   .frames .flex article {
-    width: calc(50% - 0.625rem);
+    width: calc(100% - 0.625rem);
   }
 }
 
 @media (width >=1200px) {
   .frames .flex article {
-    width: calc(25% - 0.625rem);
+    width: calc(50% - 0.625rem);
   }
 }
